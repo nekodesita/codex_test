@@ -1,0 +1,17 @@
+[package]
+name = "tauri_text_editor"
+version = "0.1.0"
+description = "A simple Tauri text editor"
+authors = ["you"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "1.5", features = [] }
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+tauri = { version = "1.5", features = ["dialog-save", "dialog-open", "fs-read-file", "fs-write-file", "path-basename"] }
+
+[features]
+custom-protocol = ["tauri/custom-protocol"]
