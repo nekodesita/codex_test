@@ -1,0 +1,38 @@
+{
+  "build": {
+    "beforeDevCommand": "",
+    "beforeBuildCommand": "",
+    "devPath": "../src",
+    "distDir": "../src"
+  },
+  "package": {
+    "productName": "Tauri Text Editor",
+    "version": "0.1.0"
+  },
+  "tauri": {
+    "allowlist": {
+      "dialog": {
+        "open": true,
+        "save": true
+      },
+      "fs": {
+        "readFile": true,
+        "writeFile": true
+      },
+      "path": {
+        "basename": true
+      }
+    },
+    "windows": [
+      {
+        "title": "Tauri テキストエディタ",
+        "width": 960,
+        "height": 640,
+        "resizable": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  }
+}
