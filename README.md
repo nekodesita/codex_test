@@ -24,7 +24,6 @@ cd codex_test
 npm install
 ```
 
-このとき **Tauri の CLI も一緒に入ります**（`@tauri-apps/cli`）。
 ## 3. アプリを起動（開発モード）
 
 ```bash
