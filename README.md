@@ -24,13 +24,6 @@ cd codex_test
 npm install
 ```
 
-このとき **Tauri の CLI も一緒に入ります**（`@tauri-apps/cli`）。
-
-> もし `tauri.conf.json` のエラー（identifier が必要など）が出る場合は、
-> **Tauri v2 が入ってしまっている**のが原因です。
-> その場合は一度 `node_modules` と `package-lock.json` を削除してから、
-> `npm install` をやり直してください（このリポジトリは v1 を使います）。
-
 ## 3. アプリを起動（開発モード）
 
 ```bash
